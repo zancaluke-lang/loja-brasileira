@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodotti Brasiliani Autentici - Amazon Italia</title>
+    <meta name="description" content="I migliori prodotti brasiliani autentici disponibili su Amazon Italia. Acai, guarana, cafe, cosmetici naturali e molto altro.">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #009c3b, #ffdf00);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 { font-size: 2.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
+        header p { font-size: 1.1em; margin-top: 10px; opacity: 0.9; }
+        .flag { font-size: 3em; margin-bottom: 15px; }
+        .container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .stat {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .stat-num { font-size: 2em; font-weight: bold; color: #009c3b; }
+        .stat-label { font-size: 0.9em; color: #666; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .produto-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .produto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .produto-img {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            overflow: hidden;
+        }
+        .produto-img img {
+            max-height: 180px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .no-img { font-size: 4em; }
+        .produto-info { padding: 15px; }
+        .categoria {
+            background: #ffdf00;
+            color: #333;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .produto-info h3 {
+            font-size: 0.95em;
+            color: #333;
+            margin-bottom: 8px;
+            line-height: 1.4;
+            height: 2.8em;
+            overflow: hidden;
+        }
+        .rating { color: #f90; font-size: 0.85em; margin-bottom: 8px; }
+        .preco {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #b12704;
+            margin-bottom: 12px;
+        }
+        .btn-compra {
+            display: block;
+            background: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+        .btn-compra:hover { background: #e68a00; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #232f3e;
+            color: #ccc;
+            margin-top: 40px;
+            font-size: 0.85em;
+        }
+        footer a { color: #ff9900; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="flag">🇧🇷</div>
+        <h1>Prodotti Brasiliani Autentici</h1>
+        <p>Il meglio del Brasile disponibile su Amazon Italia</p>
+    </header>
+    
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">30</div>
+                <div class="stat-label">Prodotti disponibili</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">🚀</div>
+                <div class="stat-label">Consegna Prime</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">🇧🇷</div>
+                <div class="stat-label">100% Brasiliano</div>
+            </div>
+        </div>
+        
+        <div class="grid">
+            
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61x0CjpNgKL._AC_UL320_.jpg" alt="Sevenhills Wholefoods Polvere Di Bacca Di Acai Bio 100g" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">acai biologico</p>
+                <h3>Sevenhills Wholefoods Polvere Di Bacca Di Acai Bio 100g</h3>
+                <p class="rating">4,4 su 5 stelle</p>
+                <p class="preco">€14
+,,99</p>
+                <a href="https://www.amazon.it/dp/B00HLL324M?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/816m5e1UoiL._AC_UL320_.jpg" alt="Biojoy Acai in Polvere BIO (100 g), Bacche di Acai Liofilizzate e Crude (Euterpe oleracea Mart.)" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">acai biologico</p>
+                <h3>Biojoy Acai in Polvere BIO (100 g), Bacche di Acai Liofilizzate e Crude (Euterpe oleracea Mart.)</h3>
+                <p class="rating">4,5 su 5 stelle</p>
+                <p class="preco">€14
+,,99</p>
+                <a href="https://www.amazon.it/dp/B08XVPF7P2?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/81X3T4n0jLL._AC_UL320_.jpg" alt="KoRo - Açai bio in polvere | 500 g" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">acai biologico</p>
+                <h3>KoRo - Açai bio in polvere | 500 g</h3>
+                <p class="rating">3,8 su 5 stelle</p>
+                <p class="preco">€55
+,,00</p>
+                <a href="https://www.amazon.it/dp/B08KGBFFZX?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71rutCYcWiL._AC_UL320_.jpg" alt="Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da " loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">guarana brasiliano</p>
+                <h3>Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da </h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€21
+,,99</p>
+                <a href="https://www.amazon.it/dp/B01MTQVUQQ?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/713dywCs7gL._AC_UL320_.jpg" alt="Guarana Bio 400mg - 200 compresse" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">guarana brasiliano</p>
+                <h3>Guarana Bio 400mg - 200 compresse</h3>
+                <p class="rating">4,1 su 5 stelle</p>
+                <p class="preco">€12
+,,99</p>
+                <a href="https://www.amazon.it/dp/B00S9OGQWK?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/618FIlrrK3L._AC_UL320_.jpg" alt="Gummies Caffeina con Taurina e Guaranà - Energia e Focus Mentale - 60 Gummies Vegane - Senza Zuccher" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">guarana brasiliano</p>
+                <h3>Gummies Caffeina con Taurina e Guaranà - Energia e Focus Mentale - 60 Gummies Vegane - Senza Zuccher</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€17
+,,90</p>
+                <a href="https://www.amazon.it/dp/B0GH6Y4Q8L?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71FAw6yDJCL._AC_UL320_.jpg" alt="by Amazon Caffè in Grani Brasiliano, Tostatura Media, 1kg (2 Confezioni da 500g) - Certificato Rainf" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">caffe brasiliano</p>
+                <h3>by Amazon Caffè in Grani Brasiliano, Tostatura Media, 1kg (2 Confezioni da 500g) - Certificato Rainf</h3>
+                <p class="rating">3,9 su 5 stelle</p>
+                <p class="preco">€15
+,,92</p>
+                <a href="https://www.amazon.it/dp/B08FRSX4F5?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/41hdz7B1efL._AC_UL320_.jpg" alt="Bocono Specialty Coffee. Specialty Coffee Origine Brasile. Caffe in Grani 1 KG. Caffè Specialty Tost" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">caffe brasiliano</p>
+                <h3>Bocono Specialty Coffee. Specialty Coffee Origine Brasile. Caffe in Grani 1 KG. Caffè Specialty Tost</h3>
+                <p class="rating">3,9 su 5 stelle</p>
+                <p class="preco">€33
+,,00</p>
+                <a href="https://www.amazon.it/dp/B0871NKFCD?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71yAXKWoEsL._AC_UL320_.jpg" alt="Incapto Caffè in Grani di Specialità 1kg | Dark Roast Brasile 100% Arabica - Massima Caffeina| Tosta" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">caffe brasiliano</p>
+                <h3>Incapto Caffè in Grani di Specialità 1kg | Dark Roast Brasile 100% Arabica - Massima Caffeina| Tosta</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€42
+,,86</p>
+                <a href="https://www.amazon.it/dp/B08Z479D2Y?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71JKuFDmOHL._AC_UL320_.jpg" alt="Havaianas" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">Havaianas</p>
+                <h3>Havaianas</h3>
+                <p class="rating">4,6 su 5 stelle</p>
+                <p class="preco">€18
+,,00</p>
+                <a href="https://www.amazon.it/dp/B09XJFWQKZ?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/818KwBX3BwL._AC_UL320_.jpg" alt="Havaianas" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">Havaianas</p>
+                <h3>Havaianas</h3>
+                <p class="rating">4,6 su 5 stelle</p>
+                <p class="preco">€19
+,,20</p>
+                <a href="https://www.amazon.it/dp/B08FYPYJL5?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61M99PlTOkL._AC_UL320_.jpg" alt="Havaianas" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">Havaianas</p>
+                <h3>Havaianas</h3>
+                <p class="rating">4,6 su 5 stelle</p>
+                <p class="preco">€17
+,,99</p>
+                <a href="https://www.amazon.it/dp/B000W8AMRG?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/81a3DRs2fyL._AC_UL320_.jpg" alt="KATIVA Kit Lisciante Brasiliano alla Cheratina con Acido Ialuronico e Siero Termoprotettore Potion 4" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">cosmetici brasiliani naturali</p>
+                <h3>KATIVA Kit Lisciante Brasiliano alla Cheratina con Acido Ialuronico e Siero Termoprotettore Potion 4</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€19
+,,90</p>
+                <a href="https://www.amazon.it/dp/B0CB1KQ8Q4?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/818-jE6mvdL._AC_UL320_.jpg" alt="Kativa Kit lisciante brasiliano XPRESS (confezione italiana)" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">cosmetici brasiliani naturali</p>
+                <h3>Kativa Kit lisciante brasiliano XPRESS (confezione italiana)</h3>
+                <p class="rating">4,2 su 5 stelle</p>
+                <p class="preco">€16
+,,94</p>
+                <a href="https://www.amazon.it/dp/B07VQT61H3?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61R6uvzSI2L._AC_UL320_.jpg" alt="Naissance Burro di Karitè Raffinato Bio (No. 305) - 500g - Naturale e Vegano - per Cosmetico, Ripara" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">cosmetici brasiliani naturali</p>
+                <h3>Naissance Burro di Karitè Raffinato Bio (No. 305) - 500g - Naturale e Vegano - per Cosmetico, Ripara</h3>
+                <p class="rating">4,5 su 5 stelle</p>
+                <p class="preco">€16
+,,99</p>
+                <a href="https://www.amazon.it/dp/B004SMBG5E?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71SvpvddpzL._AC_UL320_.jpg" alt="OGX Renewing + Argan Oil of Marocco Extra Penetrating Oil, Olio di Argan per capelli morbidi, setosi" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">olio di argan brasiliano</p>
+                <h3>OGX Renewing + Argan Oil of Marocco Extra Penetrating Oil, Olio di Argan per capelli morbidi, setosi</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€7
+,,60</p>
+                <a href="https://www.amazon.it/dp/B084TM8Q4D?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61jvVJElbsL._AC_UL320_.jpg" alt="Karseell MACA CARE SYSTEM Cheratina Lisciante Senza Formaldeide Trattamento Brasiliano Professionale" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">olio di argan brasiliano</p>
+                <h3>Karseell MACA CARE SYSTEM Cheratina Lisciante Senza Formaldeide Trattamento Brasiliano Professionale</h3>
+                <p class="rating">3,7 su 5 stelle</p>
+                <p class="preco">€59
+,,99</p>
+                <a href="https://www.amazon.it/dp/B0DPHTD8Y4?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71rNeZ84S3L._AC_UL320_.jpg" alt="PraNaturals Olio di Argan del Marocco per capelli, viso e corpo – 100% Naturale, puro e senza parabe" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">olio di argan brasiliano</p>
+                <h3>PraNaturals Olio di Argan del Marocco per capelli, viso e corpo – 100% Naturale, puro e senza parabe</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€13
+,,99</p>
+                <a href="https://www.amazon.it/dp/B08DYFPD6F?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61zNOV3NclL._AC_UL320_.jpg" alt="Ballotin di praline belghe di lusso 250 g, confezionato come regalo con fiocco giallo. Senza conserv" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">cioccolato brasiliano</p>
+                <h3>Ballotin di praline belghe di lusso 250 g, confezionato come regalo con fiocco giallo. Senza conserv</h3>
+                <p class="rating">4,0 su 5 stelle</p>
+                <p class="preco">€16
+,,90</p>
+                <a href="https://www.amazon.it/dp/B0DX2WY7S4?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61dCwqF4FlL._AC_UL320_.jpg" alt="Bonbon de Cioccolato con Cialda Croccante e Ripieno di Crema di Arachidi, Argentina, Box 270g - ARCO" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">cioccolato brasiliano</p>
+                <h3>Bonbon de Cioccolato con Cialda Croccante e Ripieno di Crema di Arachidi, Argentina, Box 270g - ARCO</h3>
+                <p class="rating">4,1 su 5 stelle</p>
+                <p class="preco">€16
+,,88</p>
+                <a href="https://www.amazon.it/dp/B082J4B7M3?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71qBAyIdzKL._AC_UL320_.jpg" alt="4X Gentilini Biscotti BRASIL al Cacao, Antica Ricetta Originale 250g" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">cioccolato brasiliano</p>
+                <h3>4X Gentilini Biscotti BRASIL al Cacao, Antica Ricetta Originale 250g</h3>
+                <p class="rating">4,8 su 5 stelle</p>
+                <p class="preco">€16
+,,70</p>
+                <a href="https://www.amazon.it/dp/B0DH2CBZQ2?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/710gS3OE3bL._AC_UL320_.jpg" alt="Propoli Capsule – Estratto da 2.000mg di Propoli Naturale – 180 Capsule – Fornitura da 3 Mesi – Bee " loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">propoli brasiliana</p>
+                <h3>Propoli Capsule – Estratto da 2.000mg di Propoli Naturale – 180 Capsule – Fornitura da 3 Mesi – Bee </h3>
+                <p class="rating">4,6 su 5 stelle</p>
+                <p class="preco">€19
+,,99</p>
+                <a href="https://www.amazon.it/dp/B0BKQ6PHJ4?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/617gq7K4abL._AC_UL320_.jpg" alt="Propoli 2000 mg - Capsule di propoli a elevata concentrazione - 90 capsule - Rinforzo naturale per i" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">propoli brasiliana</p>
+                <h3>Propoli 2000 mg - Capsule di propoli a elevata concentrazione - 90 capsule - Rinforzo naturale per i</h3>
+                <p class="rating">4,1 su 5 stelle</p>
+                <p class="preco">€17
+,,79</p>
+                <a href="https://www.amazon.it/dp/B08TB387M9?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61o1h8CZejL._AC_UL320_.jpg" alt="Vitamintrend Estratto di propoli 1000 mg, 180 compresse, ad alto dosaggio, integratore alimentare se" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">propoli brasiliana</p>
+                <h3>Vitamintrend Estratto di propoli 1000 mg, 180 compresse, ad alto dosaggio, integratore alimentare se</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€29
+,,95</p>
+                <a href="https://www.amazon.it/dp/B08W9PZWY4?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71Lr+jl4DbL._AC_UL320_.jpg" alt="Curcuma e Piperina Plus + PROBIOTICI + Zenzero e Pepe Nero - 1460 mg - 250 Capsule per +4 Mesi - Cur" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">curcuma brasiliana</p>
+                <h3>Curcuma e Piperina Plus + PROBIOTICI + Zenzero e Pepe Nero - 1460 mg - 250 Capsule per +4 Mesi - Cur</h3>
+                <p class="rating">4,5 su 5 stelle</p>
+                <p class="preco">€25
+,,09</p>
+                <a href="https://www.amazon.it/dp/B08MYVY82G?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71N3V-bsbwL._AC_UL320_.jpg" alt="Metagenics – Curcudyn Forte 30 capsule di Curcuma Boswellia Zenzero – Integratore Alimentare Curcumi" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">curcuma brasiliana</p>
+                <h3>Metagenics – Curcudyn Forte 30 capsule di Curcuma Boswellia Zenzero – Integratore Alimentare Curcumi</h3>
+                <p class="rating">4,4 su 5 stelle</p>
+                <p class="preco">€22
+,,79</p>
+                <a href="https://www.amazon.it/dp/B0843WS6PV?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71URPUGEPoL._AC_UL320_.jpg" alt="Curcuma 1520mg con Zenzero e Pepe Nero - 365 Capsule Vegane - Alto Dosaggio di Curcumina in Polvere " loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">curcuma brasiliana</p>
+                <h3>Curcuma 1520mg con Zenzero e Pepe Nero - 365 Capsule Vegane - Alto Dosaggio di Curcumina in Polvere </h3>
+                <p class="rating">4,5 su 5 stelle</p>
+                <p class="preco">€21
+,,97</p>
+                <a href="https://www.amazon.it/dp/B0CP89K7HP?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61ddTQTqMBL._AC_UL320_.jpg" alt="Trovazin Premium Gel | Con estratto di ippocastano | Qualità Premium | Contenuto 75ml" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">prodotti amazzonici</p>
+                <h3>Trovazin Premium Gel | Con estratto di ippocastano | Qualità Premium | Contenuto 75ml</h3>
+                <p class="rating"></p>
+                <p class="preco">€39
+,,95</p>
+                <a href="https://www.amazon.it/dp/B0G4QCG1B2?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/71+ECVsVzIL._AC_UL320_.jpg" alt="Kit modulo laser 30W potenza ottica, LASER TREE K30 testa laser con aria assistere TTL modulo luce b" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">prodotti amazzonici</p>
+                <h3>Kit modulo laser 30W potenza ottica, LASER TREE K30 testa laser con aria assistere TTL modulo luce b</h3>
+                <p class="rating">4,4 su 5 stelle</p>
+                <p class="preco">€529
+,,96</p>
+                <a href="https://www.amazon.it/dp/B0C3HQDVW9?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        <div class="produto-card">
+            <div class="produto-img">
+                <img src="https://m.media-amazon.com/images/I/61rWBbDaOHL._AC_UL320_.jpg" alt="Collagene da Bere - Collagene e Acido ialuronico Integratore, 60 Stick con Gliprolys® Collagen liqui" loading="lazy">
+            </div>
+            <div class="produto-info">
+                <p class="categoria">prodotti amazzonici</p>
+                <h3>Collagene da Bere - Collagene e Acido ialuronico Integratore, 60 Stick con Gliprolys® Collagen liqui</h3>
+                <p class="rating">4,3 su 5 stelle</p>
+                <p class="preco">€29
+,,90</p>
+                <a href="https://www.amazon.it/dp/B0DT73PVTH?tag=agents-21" target="_blank" class="btn-compra">
+                    Acquista su Amazon.it
+                </a>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+    
+    <footer>
+        <p>Link di affiliazione Amazon — Acquistando tramite questi link supporti il canale senza costi aggiuntivi.</p>
+        <p style="margin-top:8px;">Aggiornato: 13/04/2026 | 
+        <a href="https://www.amazon.it" target="_blank">Amazon.it</a></p>
+    </footer>
+</body>
+</html>
