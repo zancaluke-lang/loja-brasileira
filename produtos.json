@@ -1,53 +1,58 @@
 [
   {
     "titulo": "Kativa - Kit lisciante brasiliano (cheratina) con olio di argan e acido ialuronico | Trattamento Lis",
-    "preco": "€21\n,,00",
+    "preco": "€21,00",
     "link": "https://www.amazon.it/dp/B08CB4QDHB?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81Sf41m6LNL._AC_UL320_.jpg",
     "rating": "4,3 su 5 stelle",
     "categoria": "KATIVA kit lisciante brasiliano cheratina",
     "asin": "B08CB4QDHB",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "KATIVA Kit Lisciante Brasiliano alla Cheratina con Acido Ialuronico e Siero Termoprotettore Potion 4",
-    "preco": "€19\n,,90",
+    "preco": "€19,90",
     "link": "https://www.amazon.it/dp/B0CB1KQ8Q4?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81a3DRs2fyL._AC_UL320_.jpg",
     "rating": "4,2 su 5 stelle",
     "categoria": "KATIVA kit lisciante brasiliano cheratina",
     "asin": "B0CB1KQ8Q4",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "Kativa Kit lisciante brasiliano XPRESS (confezione italiana)",
-    "preco": "€16\n,,95",
+    "preco": "€16,95",
     "link": "https://www.amazon.it/dp/B07VQT61H3?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/818-jE6mvdL._AC_UL320_.jpg",
     "rating": "4,2 su 5 stelle",
     "categoria": "KATIVA kit lisciante brasiliano cheratina",
     "asin": "B07VQT61H3",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "sol de Janeiro - Cheirosa ’40 Hair & Body Fragrance Mist 90 ml",
-    "preco": "€30\n,,49",
+    "preco": "€30,49",
     "link": "https://www.amazon.it/dp/B096W846FC?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61LCwwkOR7L._AC_UL320_.jpg",
     "rating": "4,6 su 5 stelle",
     "categoria": "Sol de Janeiro hair body mist Cheirosa",
     "asin": "B096W846FC",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "Sol de Janeiro - Doce de Leite Mist 90ml",
-    "preco": "€28\n,,80",
+    "preco": "€28,80",
     "link": "https://www.amazon.it/dp/B08K3QF1YN?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61xAckpFP3L._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "Sol de Janeiro hair body mist Cheirosa",
     "asin": "B08K3QF1YN",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "Sol de Janeiro - Cheirosa ’40 Hair & Body Fragrance Mist 240 ml",
@@ -57,7 +62,8 @@
     "rating": "4,6 su 5 stelle",
     "categoria": "Sol de Janeiro hair body mist Cheirosa",
     "asin": "B099T9WLZX",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "NATURA - Latte Idratante per il Corpo Maracuja Natura Ekos - Idrata, Lenisce e Ammorbidisce la Pelle",
@@ -67,7 +73,8 @@
     "rating": "4,6 su 5 stelle",
     "categoria": "Natura Brasil Ekos castanha maracuja",
     "asin": "B08KFPYPKF",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "NATURA - Olio Doccia Trifase Maracuja Natura Ekos - 200 ml",
@@ -77,7 +84,8 @@
     "rating": "4,5 su 5 stelle",
     "categoria": "Natura Brasil Ekos castanha maracuja",
     "asin": "B08KFMCDD8",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "NATURA - Crema per le Mani Castanha Ekos - Nutrizione e Idratazione Intense - Per Mani Secche, Danne",
@@ -87,396 +95,436 @@
     "rating": "4,6 su 5 stelle",
     "categoria": "Natura Brasil Ekos castanha maracuja",
     "asin": "B07XV9GM2G",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "OGX Set Capelli Shampoo e Balsamo Ever Straightening + Brazilian Keratin Smooth con balsamo e shampo",
-    "preco": "€13\n,,49",
+    "preco": "€13,49",
     "link": "https://www.amazon.it/dp/B0DK35HMYG?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81H-WrzGe2L._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "OGX Brazilian Keratin shampoo balsamo",
     "asin": "B0DK35HMYG",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "OGX Shampoo Cheratina Ever Straightening + Brazilian Keratin Smooth, Shampo idratante con Cheratina ",
-    "preco": "€6\n,,80",
+    "preco": "€6,80",
     "link": "https://www.amazon.it/dp/B004ISW5YY?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71JXPvQcqaL._AC_UL320_.jpg",
     "rating": "4,0 su 5 stelle",
     "categoria": "OGX Brazilian Keratin shampoo balsamo",
     "asin": "B004ISW5YY",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "OGX Balsamo Cheratina Ever Straightening + Brazilian Keratin Smoothn cheratina per capelli lisciante",
-    "preco": "€6\n,,60",
+    "preco": "€6,60",
     "link": "https://www.amazon.it/dp/B00605MC82?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71tZUhjM7gL._AC_UL320_.jpg",
     "rating": "4,1 su 5 stelle",
     "categoria": "OGX Brazilian Keratin shampoo balsamo",
     "asin": "B00605MC82",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "NOVEX Maschera brasiliana per capelli alla cheratina, 400 grammi, trasparente",
-    "preco": "€8\n,,20",
+    "preco": "€8,20",
     "link": "https://www.amazon.it/dp/B077J5VNB1?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61XsImzyRkL._AC_UL320_.jpg",
     "rating": "4,2 su 5 stelle",
     "categoria": "NOVEX maschera cheratina brasiliana",
     "asin": "B077J5VNB1",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "Novex - Maschera idratante per capelli, trattamento profondo – 1 kg.",
-    "preco": "€12\n,,15",
+    "preco": "€12,15",
     "link": "https://www.amazon.it/dp/B0713TJTQ3?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71I3Rxy+z6L._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "NOVEX maschera cheratina brasiliana",
     "asin": "B0713TJTQ3",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "Novex Maschera per capelli ricarica cheratina con cheratina di origine vegetale per capelli più morb",
-    "preco": "€7\n,,59",
+    "preco": "€7,59",
     "link": "https://www.amazon.it/dp/B08DGP7MX9?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61x7X1IvmPL._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "NOVEX maschera cheratina brasiliana",
     "asin": "B08DGP7MX9",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Bellezza"
   },
   {
     "titulo": "YOKI Panini di formaggio brasiliani Pao de Queijo | Confezione di 4",
-    "preco": "€16\n,,90",
+    "preco": "€16,90",
     "link": "https://www.amazon.it/dp/B0CT968XFZ?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71HVD-GtFoL._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "pao de queijo Yoki miscela",
     "asin": "B0CT968XFZ",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Mix di pane al formaggio Yoki - Pão de Queijo - LondonWeek®",
-    "preco": "€6\n,,59",
+    "preco": "€6,59",
     "link": "https://www.amazon.it/dp/B09HLC26WM?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/41rnitVM7DL._AC_UL320_.jpg",
     "rating": "4,1 su 5 stelle",
     "categoria": "pao de queijo Yoki miscela",
     "asin": "B09HLC26WM",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Cheese Bread Mix Yoki 250gr Mistura Para Pao De Queijo by Yoki",
-    "preco": "€6\n,,50",
+    "preco": "€6,50",
     "link": "https://www.amazon.it/dp/B00563VAD2?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/812kLDGWovL._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "pao de queijo Yoki miscela",
     "asin": "B00563VAD2",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Belle barrette di arachidi, barattolo di plastica, 1000 g, Paçoca Retangular Tradicional Moreninha d",
-    "preco": "€26\n,,99",
+    "preco": "€26,99",
     "link": "https://www.amazon.it/dp/B0CCDRT654?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/610kKXwFDwL._AC_UL320_.jpg",
     "rating": "4,7 su 5 stelle",
     "categoria": "pacoca brasiliana arachidi Moreninha",
     "asin": "B0CCDRT654",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Burro di arachidi light in polvere 500g - Burro di arachidi in polvere 85% di grassi in meno, senza ",
-    "preco": "€21\n,,99",
+    "preco": "€21,99",
     "link": "https://www.amazon.it/dp/B0FGZMBKL7?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71lCyauwLYL._AC_UL320_.jpg",
     "rating": "4,5 su 5 stelle",
     "categoria": "pacoca brasiliana arachidi Moreninha",
     "asin": "B0FGZMBKL7",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "1 Attimo in Forma | 24 Barrette Energetiche Cioccolato Caramello Arachidi Crunchy - Pack da 24 x 50 ",
-    "preco": "€29\n,,99",
+    "preco": "€29,99",
     "link": "https://www.amazon.it/dp/B0D63C6W6Q?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/51VM1i23hmL._AC_UL320_.jpg",
     "rating": "4,7 su 5 stelle",
     "categoria": "pacoca brasiliana arachidi Moreninha",
     "asin": "B0D63C6W6Q",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Noci Brasiliane Sgusciate Bio e Crude - 250g. Noci Sgusciate dal Brasile - Amazzonia - Contengono Sa",
-    "preco": "€14\n,,99",
+    "preco": "€14,99",
     "link": "https://www.amazon.it/dp/B01ETSD5CS?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71rdkVUxycL._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "noci del brasile biologiche Castanha Para",
     "asin": "B01ETSD5CS",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Biojoy Noci Brasiliane Sgusciate Biologiche (1 kg), crude, non salate e naturali",
-    "preco": "€40\n,,99",
+    "preco": "€40,99",
     "link": "https://www.amazon.it/dp/B07QSVVKHX?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/819Mj9GKIKL._AC_UL320_.jpg",
     "rating": "4,5 su 5 stelle",
     "categoria": "noci del brasile biologiche Castanha Para",
     "asin": "B07QSVVKHX",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "ZIG - HORECA - Noci del Brasile sgusciate Noci brasiliane dell'Amazzonia 1Kg",
-    "preco": "€31\n,,10",
+    "preco": "€31,10",
     "link": "https://www.amazon.it/dp/B07PB4YB3L?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/814f7ujuh6L._AC_UL320_.jpg",
     "rating": "4,3 su 5 stelle",
     "categoria": "noci del brasile biologiche Castanha Para",
     "asin": "B07PB4YB3L",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Sour Starch - Polvilho Azedo - Yoki - 17.6 (oz 500g) - GLUTEN FREE",
-    "preco": "€6\n,,89",
+    "preco": "€6,89",
     "link": "https://www.amazon.it/dp/B005CBRPIW?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/914UBZcn-fL._AC_UL320_.jpg",
     "rating": "4,6 su 5 stelle",
     "categoria": "tapioca polvilho Yoki Amafil",
     "asin": "B005CBRPIW",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Yoki- Polvilho doce (Sour Manioc) 500g (PACK OF 2)",
-    "preco": "€9\n,,99",
+    "preco": "€9,99",
     "link": "https://www.amazon.it/dp/B00RM0PTS4?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61S1rCsDSqL._AC_UL320_.jpg",
     "rating": "4,5 su 5 stelle",
     "categoria": "tapioca polvilho Yoki Amafil",
     "asin": "B00RM0PTS4",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "TAPIOCA YOKI BUSTA DA 500GR",
-    "preco": "€8\n,,99",
+    "preco": "€8,99",
     "link": "https://www.amazon.it/dp/B019D0NF2C?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81N8SMSkHfL._AC_UL320_.jpg",
     "rating": "4,2 su 5 stelle",
     "categoria": "tapioca polvilho Yoki Amafil",
     "asin": "B019D0NF2C",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Velho Barreiro Cachaca, 700ml",
-    "preco": "€23\n,,90",
+    "preco": "€23,90",
     "link": "https://www.amazon.it/dp/B007W1JSQ2?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/616C8VPDzpL._AC_UL320_.jpg",
     "rating": "4,5 su 5 stelle",
     "categoria": "cachaca brasiliana Velho Barreiro Leblon",
     "asin": "B007W1JSQ2",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Velho Barreiro Cachaça 39,00% 1,00 Liter",
-    "preco": "€29\n,,85",
+    "preco": "€29,85",
     "link": "https://www.amazon.it/dp/B08MYM2Y1T?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/51s1UX+q0rL._AC_UL320_.jpg",
     "rating": "5,0 su 5 stelle",
     "categoria": "cachaca brasiliana Velho Barreiro Leblon",
     "asin": "B08MYM2Y1T",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Sagatiba Cristalina - Cachaça Brasiliana Premium, 70 cl, Invecchiata 2 Anni, 38% Vol",
-    "preco": "€13\n,,03",
+    "preco": "€13,03",
     "link": "https://www.amazon.it/dp/B07WWXF5SP?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61fiRES-i9L._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "cachaca brasiliana Velho Barreiro Leblon",
     "asin": "B07WWXF5SP",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "|Bonbon Sonho De Valsa - Lacta - 35.27oz || Bombom Sonho De Valsa Lacta - 1kg|",
-    "preco": "€39\n,,99",
+    "preco": "€39,99",
     "link": "https://www.amazon.it/dp/B00E3UV86I?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/91obA9V9DnL._AC_UL320_.jpg",
     "rating": "4,6 su 5 stelle",
     "categoria": "Bombom Sonho de Valsa Lacta cioccolatini",
     "asin": "B00E3UV86I",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Weibler Confiserie | Astuccio Set 4 Rossetti in Cioccolato al Latte | Creazioni in Cioccolato al Lat",
-    "preco": "€11\n,,99",
+    "preco": "€11,99",
     "link": "https://www.amazon.it/dp/B0888NQJ6G?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61pzbLzIxKL._AC_UL320_.jpg",
     "rating": "3,8 su 5 stelle",
     "categoria": "Bombom Sonho de Valsa Lacta cioccolatini",
     "asin": "B0888NQJ6G",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Mars Barretta con Caramello Ricoperta al Cioccolato, 32 Barrette X51G (1632G), Idee Regalo Natale, N",
-    "preco": "€24\n,,90",
+    "preco": "€24,90",
     "link": "https://www.amazon.it/dp/B0CT3KLQW4?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61KMhAl9WtL._AC_UL320_.jpg",
     "rating": "4,5 su 5 stelle",
     "categoria": "Bombom Sonho de Valsa Lacta cioccolatini",
     "asin": "B0CT3KLQW4",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Biojoy Acai in Polvere BIO (100 g), Bacche di Acai Liofilizzate e Crude (Euterpe oleracea Mart.)",
-    "preco": "€14\n,,99",
+    "preco": "€14,99",
     "link": "https://www.amazon.it/dp/B08XVPF7P2?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/816m5e1UoiL._AC_UL320_.jpg",
     "rating": "4,5 su 5 stelle",
     "categoria": "acai biologico polvere",
     "asin": "B08XVPF7P2",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "KoRo - Açai bio in polvere | 500 g",
-    "preco": "€55\n,,00",
+    "preco": "€55,00",
     "link": "https://www.amazon.it/dp/B08KGBFFZX?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81X3T4n0jLL._AC_UL320_.jpg",
     "rating": "3,8 su 5 stelle",
     "categoria": "acai biologico polvere",
     "asin": "B08KGBFFZX",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "BactPro - BactSeptic - Pulizia e manutenzione delle fosse biologiche, scioglie gli ingorghi ed elimi",
-    "preco": "€25\n,,99",
+    "preco": "€25,99",
     "link": "https://www.amazon.it/dp/B09B3LNBYK?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61mySElp43L._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "acai biologico polvere",
     "asin": "B09B3LNBYK",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da ",
-    "preco": "€21\n,,99",
+    "preco": "€21,99",
     "link": "https://www.amazon.it/dp/B01MTQVUQQ?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71rutCYcWiL._AC_UL320_.jpg",
     "rating": "4,3 su 5 stelle",
     "categoria": "guarana brasiliano capsule",
     "asin": "B01MTQVUQQ",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Guaranà BIO Extra Forte, 5400mg al giorno | 10% Caffeina Naturale | 90 capsule | Equilibrio del peso",
-    "preco": "€18\n,,99",
+    "preco": "€18,99",
     "link": "https://www.amazon.it/dp/B0CPMB415S?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/6111y-REp9L._AC_UL320_.jpg",
     "rating": "4,3 su 5 stelle",
     "categoria": "guarana brasiliano capsule",
     "asin": "B0CPMB415S",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da ",
-    "preco": "€21\n,,99",
+    "preco": "€21,99",
     "link": "https://www.amazon.it/dp/B01MTQVUQQ?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71rutCYcWiL._AC_UL320_.jpg",
     "rating": "4,3 su 5 stelle",
     "categoria": "guarana brasiliano capsule",
     "asin": "B01MTQVUQQ",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Incapto Caffè in Grani di Specialità 1kg | Origine Brasile | 100% Arabica | Specialty Coffee 84 punt",
-    "preco": "€30\n,,35",
+    "preco": "€30,35",
     "link": "https://www.amazon.it/dp/B08J3DZ3FF?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/61j+iwypWML._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "caffe brasiliano specialty",
     "asin": "B08J3DZ3FF",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Bocono Specialty Coffee. Specialty Coffee Origine Brasile. Caffe in Grani 1 KG. Caffè Specialty Tost",
-    "preco": "€33\n,,00",
+    "preco": "€33,00",
     "link": "https://www.amazon.it/dp/B0871NKFCD?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/41hdz7B1efL._AC_UL320_.jpg",
     "rating": "3,9 su 5 stelle",
     "categoria": "caffe brasiliano specialty",
     "asin": "B0871NKFCD",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Caffè Milani - 1937 Blend Como Lake Edition | Caffè Arabica 100% | Aroma Intenso e Note Dolci | Misc",
-    "preco": "€16\n,,90",
+    "preco": "€16,90",
     "link": "https://www.amazon.it/dp/B0FTT11B1H?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71K-A-UDn4L._AC_UL320_.jpg",
     "rating": "5,0 su 5 stelle",
     "categoria": "caffe brasiliano specialty",
     "asin": "B0FTT11B1H",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Alimentari"
   },
   {
     "titulo": "Havaianas",
-    "preco": "€12\n,,23",
+    "preco": "€12,23",
     "link": "https://www.amazon.it/dp/B0DBM6NMF4?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81F8qmng67L._AC_UL320_.jpg",
     "rating": "4,7 su 5 stelle",
     "categoria": "Havaianas infradito brasiliane",
     "asin": "B0DBM6NMF4",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Moda"
   },
   {
     "titulo": "Havaianas",
-    "preco": "€18\n,,00",
+    "preco": "€18,00",
     "link": "https://www.amazon.it/dp/B09XJHW5J4?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71JKuFDmOHL._AC_UL320_.jpg",
     "rating": "4,6 su 5 stelle",
     "categoria": "Havaianas infradito brasiliane",
     "asin": "B09XJHW5J4",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Moda"
   },
   {
     "titulo": "Havaianas",
-    "preco": "€21\n,,99",
+    "preco": "€21,99",
     "link": "https://www.amazon.it/dp/B09XJGSZP2?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/811VGQPzlBL._AC_UL320_.jpg",
     "rating": "4,6 su 5 stelle",
     "categoria": "Havaianas infradito brasiliane",
     "asin": "B09XJGSZP2",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Moda"
   },
   {
     "titulo": "Hialegion",
-    "preco": "€14\n,,99",
+    "preco": "€14,99",
     "link": "https://www.amazon.it/dp/B0F83HCSBV?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81u68LwWQML._AC_UL320_.jpg",
     "rating": "4,4 su 5 stelle",
     "categoria": "biancheria intima brasiliana donna",
     "asin": "B0F83HCSBV",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Moda"
   },
   {
     "titulo": "VOENXE",
-    "preco": "€14\n,,99",
+    "preco": "€14,99",
     "link": "https://www.amazon.it/dp/B0CXDXTTZX?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/71dKHTcsQJL._AC_UL320_.jpg",
     "rating": "4,2 su 5 stelle",
     "categoria": "biancheria intima brasiliana donna",
     "asin": "B0CXDXTTZX",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Moda"
   },
   {
     "titulo": "ALL OF SHE",
-    "preco": "€18\n,,04",
+    "preco": "€18,04",
     "link": "https://www.amazon.it/dp/B0FPQWWC5Z?tag=agents-21",
     "imagem": "https://m.media-amazon.com/images/I/81-gjhMbUKL._AC_UL320_.jpg",
     "rating": "4,2 su 5 stelle",
     "categoria": "biancheria intima brasiliana donna",
     "asin": "B0FPQWWC5Z",
-    "fonte": "amazon.it"
+    "fonte": "amazon.it",
+    "grupo": "Moda"
   }
 ]
