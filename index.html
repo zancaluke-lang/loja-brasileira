@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodotti Brasiliani Autentici &mdash; Amazon Italia</title>
-    <meta name="description" content="I migliori prodotti brasiliani autentici su Amazon Italia: bellezza, alimentari, moda.">
-    <!-- AdSense: definir ADSENSE_CLIENT em .env -->
+    <title>Prodotti Brasiliani Autentici — Amazon Italia</title>
+    <meta name="description" content="I migliori prodotti brasiliani autentici su Amazon Italia: bellezza, alimentari, moda. Aggiornato il 04/05/2026.">
+    <meta property="og:title" content="Prodotti Brasiliani Autentici — Amazon Italia">
+    <meta property="og:description" content="Scopri i migliori prodotti dal Brasile disponibili su Amazon.it">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -24,99 +26,188 @@
         }
         body { font-family: 'Inter', 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); }
 
+        /* ── HEADER ── */
         header {
             background: linear-gradient(135deg, #006622 0%, #009c3b 45%, #00b347 70%, #ffd700 100%);
-            color: white; text-align: center; padding: 56px 20px 48px; position: relative; overflow: hidden;
+            color: white;
+            text-align: center;
+            padding: 56px 20px 48px;
+            position: relative;
+            overflow: hidden;
         }
         header::before {
-            content: ""; position: absolute; inset: 0;
+            content: "";
+            position: absolute; inset: 0;
             background: radial-gradient(ellipse at 70% 50%, rgba(255,255,255,0.08) 0%, transparent 60%);
             pointer-events: none;
         }
         .header-flag { font-size: 3.5em; margin-bottom: 12px; line-height: 1; }
         header h1 {
-            font-size: clamp(1.8em, 4vw, 2.8em); font-weight: 800;
-            letter-spacing: -0.02em; text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+            font-size: clamp(1.8em, 4vw, 2.8em);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.25);
         }
-        header p { font-size: 1.05em; margin-top: 10px; opacity: 0.88; font-weight: 400; }
-        .header-badges { display: flex; gap: 10px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
+        header p {
+            font-size: 1.05em;
+            margin-top: 10px;
+            opacity: 0.88;
+            font-weight: 400;
+        }
+        .header-badges {
+            display: flex; gap: 10px; justify-content: center; margin-top: 20px; flex-wrap: wrap;
+        }
         .header-badge {
-            background: rgba(255,255,255,0.18); backdrop-filter: blur(4px);
-            border: 1px solid rgba(255,255,255,0.3); border-radius: 30px;
-            padding: 5px 14px; font-size: 0.82em; font-weight: 600;
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 30px;
+            padding: 5px 14px;
+            font-size: 0.82em;
+            font-weight: 600;
         }
 
+        /* ── FILTROS ── */
         .filtros-bar {
-            background: var(--card); border-bottom: 1px solid #e8eaf0;
-            padding: 14px 20px; display: flex; gap: 10px;
-            justify-content: center; flex-wrap: wrap;
+            background: var(--card);
+            border-bottom: 1px solid #e8eaf0;
+            padding: 14px 20px;
+            display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
             position: sticky; top: 0; z-index: 100;
             box-shadow: 0 2px 12px rgba(0,0,0,0.07);
         }
         .filtro-btn {
-            background: #f0f2f5; border: 2px solid transparent; border-radius: 40px;
-            padding: 8px 20px; font-size: 0.88em; font-weight: 600; font-family: inherit;
-            cursor: pointer; transition: all 0.2s; color: #444;
+            background: #f0f2f5;
+            border: 2px solid transparent;
+            border-radius: 40px;
+            padding: 8px 20px;
+            font-size: 0.88em;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #444;
         }
         .filtro-btn:hover { background: #e2e6ea; transform: translateY(-1px); }
         .filtro-btn.ativo {
-            background: var(--green); color: white; border-color: #007a2f;
+            background: var(--green);
+            color: white;
+            border-color: #007a2f;
             box-shadow: 0 4px 12px rgba(0,156,59,0.35);
         }
         .badge {
-            display: inline-block; background: rgba(0,0,0,0.12); border-radius: 20px;
-            padding: 1px 8px; font-size: 0.78em; margin-left: 5px; font-weight: 700;
+            display: inline-block;
+            background: rgba(0,0,0,0.12);
+            border-radius: 20px;
+            padding: 1px 8px;
+            font-size: 0.78em;
+            margin-left: 5px;
+            font-weight: 700;
         }
         .filtro-btn.ativo .badge { background: rgba(255,255,255,0.25); }
 
-        .ad-unit { background: var(--card); border-radius: var(--radius); overflow: hidden; min-height: 90px; border: 1px solid #e8eaf0; }
+        /* ── AD UNIT ── */
+        .ad-unit {
+            background: var(--card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            min-height: 100px;
+            border: 1px solid #e8eaf0;
+        }
         .ad-row { grid-column: 1 / -1; }
-        .ad-top { max-width: 1240px; margin: 20px auto 0; padding: 0 20px; }
 
+        /* ── CONTAINER & GRID ── */
         .container { max-width: 1240px; margin: 32px auto; padding: 0 20px; }
-        .stats-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 8px; }
+        .stats-bar {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 24px; flex-wrap: wrap; gap: 8px;
+        }
         .stats-bar .count { color: var(--muted); font-size: 0.92em; }
         .stats-bar .count strong { color: var(--green); font-weight: 700; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); gap: 22px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+            gap: 22px;
+        }
 
+        /* ── CARD ── */
         .produto-card {
-            background: var(--card); border-radius: var(--radius); overflow: hidden;
-            box-shadow: var(--shadow); transition: transform 0.25s, box-shadow 0.25s;
+            background: var(--card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
             display: flex; flex-direction: column;
             border-top: 4px solid var(--cat-color, #ccc);
         }
-        .produto-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+        .produto-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
         .produto-card.oculto { display: none; }
         .produto-img {
-            height: 210px; display: flex; align-items: center; justify-content: center;
-            background: #f8f9fb; overflow: hidden; padding: 12px;
+            height: 210px;
+            display: flex; align-items: center; justify-content: center;
+            background: #f8f9fb;
+            overflow: hidden;
+            padding: 12px;
         }
-        .produto-img img { max-height: 190px; max-width: 100%; object-fit: contain; transition: transform 0.3s; }
+        .produto-img img {
+            max-height: 190px; max-width: 100%;
+            object-fit: contain;
+            transition: transform 0.3s;
+        }
         .produto-card:hover .produto-img img { transform: scale(1.04); }
         .no-img { font-size: 4em; }
 
-        .produto-info { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; gap: 6px; }
+        .produto-info {
+            padding: 16px 18px 18px;
+            display: flex; flex-direction: column; flex: 1; gap: 6px;
+        }
         .categoria-tag {
             display: inline-block; align-self: flex-start;
             background: color-mix(in srgb, var(--cat-color, #6c757d) 12%, white);
-            color: var(--cat-color, #6c757d); padding: 3px 11px; border-radius: 20px;
-            font-size: 0.73em; font-weight: 700; letter-spacing: 0.02em;
+            color: var(--cat-color, #6c757d);
+            padding: 3px 11px;
+            border-radius: 20px;
+            font-size: 0.73em;
+            font-weight: 700;
+            letter-spacing: 0.02em;
         }
         .produto-info h3 {
-            font-size: 0.92em; color: #1a1a2e; line-height: 1.45; flex: 1;
-            display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+            font-size: 0.92em;
+            color: #1a1a2e;
+            line-height: 1.45;
+            flex: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
             font-weight: 600;
         }
         .rating { font-size: 0.83em; color: var(--muted); display: flex; align-items: center; gap: 4px; }
         .stars { color: #f5a623; letter-spacing: 1px; }
         .rating-val { color: var(--muted); }
-        .preco { font-size: 1.45em; font-weight: 800; color: #c0392b; letter-spacing: -0.02em; }
-        .preco-nd { font-size: 0.95em !important; font-weight: 600 !important; color: var(--muted) !important; }
+        .preco {
+            font-size: 1.45em;
+            font-weight: 800;
+            color: #c0392b;
+            letter-spacing: -0.02em;
+        }
+        .preco-nd { font-size: 0.95em; font-weight: 600; color: var(--muted); }
         .btn-compra {
-            display: block; background: #ff9900; color: white; text-align: center;
-            padding: 11px 16px; border-radius: 10px; text-decoration: none;
-            font-weight: 700; font-size: 0.88em; transition: background 0.2s, transform 0.15s;
+            display: block;
+            background: #ff9900;
+            color: white;
+            text-align: center;
+            padding: 11px 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.88em;
+            transition: background 0.2s, transform 0.15s;
             margin-top: 4px;
+            letter-spacing: 0.01em;
         }
         .btn-compra:hover { background: #e07b00; transform: translateY(-1px); }
         .sem-resultados {
@@ -124,17 +215,32 @@
             color: var(--muted); font-size: 1.1em; grid-column: 1 / -1;
         }
 
+        /* ── FOOTER ── */
         footer {
-            background: #1a1a2e; color: #9ea3b0; text-align: center;
-            padding: 36px 20px; margin-top: 60px; font-size: 0.85em; line-height: 1.8;
+            background: #1a1a2e;
+            color: #9ea3b0;
+            text-align: center;
+            padding: 36px 20px;
+            margin-top: 60px;
+            font-size: 0.85em;
+            line-height: 1.8;
         }
         footer a { color: #ff9900; text-decoration: none; }
         footer a:hover { text-decoration: underline; }
-        .footer-channels { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 14px; }
-        .footer-channels a {
-            background: rgba(255,153,0,0.12); border: 1px solid rgba(255,153,0,0.3);
-            border-radius: 8px; padding: 6px 14px; font-size: 0.9em; font-weight: 600;
+        .footer-channels {
+            display: flex; gap: 16px; justify-content: center;
+            flex-wrap: wrap; margin-top: 14px;
         }
+        .footer-channels a {
+            background: rgba(255,153,0,0.12);
+            border: 1px solid rgba(255,153,0,0.3);
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        /* ── RESPONSIVO ── */
         @media (max-width: 600px) {
             header { padding: 40px 16px 32px; }
             .container { padding: 0 14px; }
@@ -145,13 +251,13 @@
 <body>
 
 <header>
-    <div class="header-flag">&#127463;&#127479;</div>
+    <div class="header-flag">🇧🇷</div>
     <h1>Prodotti Brasiliani Autentici</h1>
     <p>Il meglio del Brasile su Amazon Italia &mdash; selezionato ogni settimana</p>
     <div class="header-badges">
-        <span class="header-badge">&#128722; 48 prodotti</span>
-        <span class="header-badge">&#9733; Solo prodotti con recensioni</span>
-        <span class="header-badge">&#128197; Aggiornato 02/05/2026</span>
+        <span class="header-badge">🛒 48 prodotti</span>
+        <span class="header-badge">★ Solo prodotti con recensioni</span>
+        <span class="header-badge">📅 Aggiornato 04/05/2026</span>
     </div>
 </header>
 
@@ -162,42 +268,43 @@
 <button class="filtro-btn" data-grupo="Moda" onclick="filtrar('Moda')">👟 Moda <span class="badge">6</span></button>
 </div>
 
-<div class="ad-top"></div>
+
 
 <div class="container">
     <div class="stats-bar">
         <p class="count">Visualizzando <strong id="count-visibili">48</strong> prodotti</p>
         <p class="count">Prezzi e disponibilit&agrave; aggiornati dal vivo su Amazon.it</p>
     </div>
+
     <div class="grid" id="grid-produtos">
         <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81Sf41m6LNL._AC_UL320_.jpg" alt="Kativa - Kit lisciante brasiliano (cheratina) con olio di argan e acido ialuronico | Trattamento Lis" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">💄 Bellezza</span>
-        <h3>Kativa - Kit lisciante brasiliano (cheratina) con olio di argan e acido ialuronico | Trattamento Lis</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,3</span></p>
-        <p class="preco">€21,00</p>
-        <a href="https://www.amazon.it/dp/B08CB4QDHB?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
     <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81a3DRs2fyL._AC_UL320_.jpg" alt="KATIVA Kit Lisciante Brasiliano alla Cheratina con Acido Ialuronico e Siero Termoprotettore Potion 4" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>KATIVA Kit Lisciante Brasiliano alla Cheratina con Acido Ialuronico e Siero Termoprotettore Potion 4</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,2</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,2</span></p>
         <p class="preco">€19,90</p>
-        <a href="https://www.amazon.it/dp/B0CB1KQ8Q4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0CB1KQ8Q4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/818-jE6mvdL._AC_UL320_.jpg" alt="Kativa Kit lisciante brasiliano XPRESS (confezione italiana)" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71EXhZC-VeL._AC_UL320_.jpg" alt="GK HAIR Global Keratin The Best Consumer Box Kit (100ml/3.4 Fl Oz) Trattamento lisciante per capelli" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
-        <h3>Kativa Kit lisciante brasiliano XPRESS (confezione italiana)</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,2</span></p>
-        <p class="preco">€16,95</p>
-        <a href="https://www.amazon.it/dp/B07VQT61H3?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>GK HAIR Global Keratin The Best Consumer Box Kit (100ml/3.4 Fl Oz) Trattamento lisciante per capelli</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">3,8</span></p>
+        <p class="preco">€99,00</p>
+        <a href="https://www.amazon.it/dp/B0727WDWJF?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81Sf41m6LNL._AC_UL320_.jpg" alt="Kativa - Kit lisciante brasiliano (cheratina) con olio di argan e acido ialuronico | Trattamento Lis" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">💄 Bellezza</span>
+        <h3>Kativa - Kit lisciante brasiliano (cheratina) con olio di argan e acido ialuronico | Trattamento Lis</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,3</span></p>
+        <p class="preco">€17,90</p>
+        <a href="https://www.amazon.it/dp/B08CB4QDHB?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -205,19 +312,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>sol de Janeiro - Cheirosa ’40 Hair & Body Fragrance Mist 90 ml</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
-        <p class="preco">€30,49</p>
-        <a href="https://www.amazon.it/dp/B096W846FC?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61xAckpFP3L._AC_UL320_.jpg" alt="Sol de Janeiro - Doce de Leite Mist 90ml" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">💄 Bellezza</span>
-        <h3>Sol de Janeiro - Doce de Leite Mist 90ml</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
-        <p class="preco">€28,80</p>
-        <a href="https://www.amazon.it/dp/B08K3QF1YN?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
+        <p class="preco preco-nd">Vedi su Amazon</p>
+        <a href="https://www.amazon.it/dp/B096W846FC?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -225,19 +322,19 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>Sol de Janeiro - Cheirosa ’40 Hair & Body Fragrance Mist 240 ml</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
         <p class="preco preco-nd">Vedi su Amazon</p>
-        <a href="https://www.amazon.it/dp/B099T9WLZX?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B099T9WLZX?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61x2rniM2IL._AC_UL320_.jpg" alt="NATURA - Latte Idratante per il Corpo Maracuja Natura Ekos - Idrata, Lenisce e Ammorbidisce la Pelle" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61xAckpFP3L._AC_UL320_.jpg" alt="Sol de Janeiro - Doce de Leite Mist 90ml" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
-        <h3>NATURA - Latte Idratante per il Corpo Maracuja Natura Ekos - Idrata, Lenisce e Ammorbidisce la Pelle</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
+        <h3>Sol de Janeiro - Doce de Leite Mist 90ml</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
         <p class="preco preco-nd">Vedi su Amazon</p>
-        <a href="https://www.amazon.it/dp/B08KFPYPKF?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B08K3QF1YN?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -245,20 +342,30 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>NATURA - Olio Doccia Trifase Maracuja Natura Ekos - 200 ml</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
         <p class="preco preco-nd">Vedi su Amazon</p>
-        <a href="https://www.amazon.it/dp/B08KFMCDD8?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B08KFMCDD8?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/51PMTe+E5eL._AC_UL320_.jpg" alt="NATURA - Crema per le Mani Maracuja Natura Ekos - Tubo da 75 g" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">💄 Bellezza</span>
+        <h3>NATURA - Crema per le Mani Maracuja Natura Ekos - Tubo da 75 g</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,5</span></p>
+        <p class="preco preco-nd">Vedi su Amazon</p>
+        <a href="https://www.amazon.it/dp/B09RK97L3B?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="ad-row"></div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61aMYFc4JzL._AC_UL320_.jpg" alt="NATURA - Crema per le Mani Castanha Ekos - Nutrizione e Idratazione Intense - Per Mani Secche, Danne" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61g6hXLJSEL._AC_UL320_.jpg" alt="NATURA – Latte Corpo Idratante Ekos Tukumã – Effetto rimpolpante – Per pelle secca e disidratata – A" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
-        <h3>NATURA - Crema per le Mani Castanha Ekos - Nutrizione e Idratazione Intense - Per Mani Secche, Danne</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
-        <p class="preco preco-nd">Vedi su Amazon</p>
-        <a href="https://www.amazon.it/dp/B07XV9GM2G?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>NATURA – Latte Corpo Idratante Ekos Tukumã – Effetto rimpolpante – Per pelle secca e disidratata – A</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€34,49</p>
+        <a href="https://www.amazon.it/dp/B098XVKF4B?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -266,9 +373,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>OGX Set Capelli Shampoo e Balsamo Ever Straightening + Brazilian Keratin Smooth con balsamo e shampo</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
-        <p class="preco">€13,49</p>
-        <a href="https://www.amazon.it/dp/B0DK35HMYG?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€15,49</p>
+        <a href="https://www.amazon.it/dp/B0DK35HMYG?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -276,9 +383,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>OGX Shampoo Cheratina Ever Straightening + Brazilian Keratin Smooth, Shampo idratante con Cheratina </h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,0</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,0</span></p>
         <p class="preco">€6,80</p>
-        <a href="https://www.amazon.it/dp/B004ISW5YY?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B004ISW5YY?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -286,9 +393,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>OGX Balsamo Cheratina Ever Straightening + Brazilian Keratin Smoothn cheratina per capelli lisciante</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,1</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,1</span></p>
         <p class="preco">€6,60</p>
-        <a href="https://www.amazon.it/dp/B00605MC82?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B00605MC82?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -296,9 +403,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>NOVEX Maschera brasiliana per capelli alla cheratina, 400 grammi, trasparente</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,2</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,2</span></p>
         <p class="preco">€8,20</p>
-        <a href="https://www.amazon.it/dp/B077J5VNB1?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B077J5VNB1?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -306,9 +413,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>Novex - Maschera idratante per capelli, trattamento profondo – 1 kg.</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
         <p class="preco">€12,15</p>
-        <a href="https://www.amazon.it/dp/B0713TJTQ3?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0713TJTQ3?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Bellezza" style="--cat-color:#d63384">
@@ -316,9 +423,9 @@
     <div class="produto-info">
         <span class="categoria-tag">💄 Bellezza</span>
         <h3>Novex Maschera per capelli ricarica cheratina con cheratina di origine vegetale per capelli più morb</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
         <p class="preco">€7,59</p>
-        <a href="https://www.amazon.it/dp/B08DGP7MX9?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B08DGP7MX9?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -326,19 +433,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>YOKI Panini di formaggio brasiliani Pao de Queijo | Confezione di 4</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
         <p class="preco">€16,90</p>
-        <a href="https://www.amazon.it/dp/B0CT968XFZ?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/41rnitVM7DL._AC_UL320_.jpg" alt="Mix di pane al formaggio Yoki - Pão de Queijo - LondonWeek®" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Mix di pane al formaggio Yoki - Pão de Queijo - LondonWeek®</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,1</span></p>
-        <p class="preco">€6,59</p>
-        <a href="https://www.amazon.it/dp/B09HLC26WM?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0CT968XFZ?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -346,9 +443,19 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Cheese Bread Mix Yoki 250gr Mistura Para Pao De Queijo by Yoki</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
-        <p class="preco">€6,50</p>
-        <a href="https://www.amazon.it/dp/B00563VAD2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€6,63</p>
+        <a href="https://www.amazon.it/dp/B00563VAD2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/41rnitVM7DL._AC_UL320_.jpg" alt="Mix di pane al formaggio Yoki - Pão de Queijo - LondonWeek®" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">🌿 Alimentari</span>
+        <h3>Mix di pane al formaggio Yoki - Pão de Queijo - LondonWeek®</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,1</span></p>
+        <p class="preco">€6,59</p>
+        <a href="https://www.amazon.it/dp/B09HLC26WM?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -356,59 +463,59 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Belle barrette di arachidi, barattolo di plastica, 1000 g, Paçoca Retangular Tradicional Moreninha d</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,7</span></p>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,7</span></p>
         <p class="preco">€26,99</p>
-        <a href="https://www.amazon.it/dp/B0CCDRT654?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0CCDRT654?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71lCyauwLYL._AC_UL320_.jpg" alt="Burro di arachidi light in polvere 500g - Burro di arachidi in polvere 85% di grassi in meno, senza " loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/715WFMI6VDL._AC_UL320_.jpg" alt="DACOLONIA Barretta di arachidi- Paçoca Rolha Tradicional 210g" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Burro di arachidi light in polvere 500g - Burro di arachidi in polvere 85% di grassi in meno, senza </h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
-        <p class="preco">€21,99</p>
-        <a href="https://www.amazon.it/dp/B0FGZMBKL7?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>DACOLONIA Barretta di arachidi- Paçoca Rolha Tradicional 210g</h3>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
+        <p class="preco">€10,99</p>
+        <a href="https://www.amazon.it/dp/B0785GSCKS?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/51VM1i23hmL._AC_UL320_.jpg" alt="1 Attimo in Forma | 24 Barrette Energetiche Cioccolato Caramello Arachidi Crunchy - Pack da 24 x 50 " loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/814+oJnHuiL._AC_UL320_.jpg" alt="Aperisnack® - AP04.002.03 – Arachidi Ricoperte Chili Secchiello Large da 2300gr. Snack Salati e Stuz" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>1 Attimo in Forma | 24 Barrette Energetiche Cioccolato Caramello Arachidi Crunchy - Pack da 24 x 50 </h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,7</span></p>
-        <p class="preco">€29,99</p>
-        <a href="https://www.amazon.it/dp/B0D63C6W6Q?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>Aperisnack® - AP04.002.03 – Arachidi Ricoperte Chili Secchiello Large da 2300gr. Snack Salati e Stuz</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,3</span></p>
+        <p class="preco">€24,90</p>
+        <a href="https://www.amazon.it/dp/B06WGXDZK2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71rdkVUxycL._AC_UL320_.jpg" alt="Noci Brasiliane Sgusciate Bio e Crude - 250g. Noci Sgusciate dal Brasile - Amazzonia - Contengono Sa" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71HRk8BgKiL._AC_UL320_.jpg" alt="Mundo Feliz, Noci Brasiliane Biologiche, 2 x 500 g" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Noci Brasiliane Sgusciate Bio e Crude - 250g. Noci Sgusciate dal Brasile - Amazzonia - Contengono Sa</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
-        <p class="preco">€14,99</p>
-        <a href="https://www.amazon.it/dp/B01ETSD5CS?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>Mundo Feliz, Noci Brasiliane Biologiche, 2 x 500 g</h3>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
+        <p class="preco">€30,35</p>
+        <a href="https://www.amazon.it/dp/B07WWHV4QW?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/819Mj9GKIKL._AC_UL320_.jpg" alt="Biojoy Noci Brasiliane Sgusciate Biologiche (1 kg), crude, non salate e naturali" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71rdkVUxycL._AC_UL320_.jpg" alt="CiboCrudo Noci Brasiliane Sgusciate Biologiche Crude, Noci del Brasile BIO Organic – 250 gr – Noci S" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Biojoy Noci Brasiliane Sgusciate Biologiche (1 kg), crude, non salate e naturali</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
-        <p class="preco">€40,99</p>
-        <a href="https://www.amazon.it/dp/B07QSVVKHX?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>CiboCrudo Noci Brasiliane Sgusciate Biologiche Crude, Noci del Brasile BIO Organic – 250 gr – Noci S</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€15,99</p>
+        <a href="https://www.amazon.it/dp/B01ETSD5CS?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/814f7ujuh6L._AC_UL320_.jpg" alt="ZIG - HORECA - Noci del Brasile sgusciate Noci brasiliane dell'Amazzonia 1Kg" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/91TsGao5eEL._AC_UL320_.jpg" alt="Noci Brasiliane O Noci Dell’Amazzonia Intere Biologiche Noci Brasiliane Biologiche Noci Brasile" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>ZIG - HORECA - Noci del Brasile sgusciate Noci brasiliane dell'Amazzonia 1Kg</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,3</span></p>
-        <p class="preco">€31,10</p>
-        <a href="https://www.amazon.it/dp/B07PB4YB3L?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>Noci Brasiliane O Noci Dell’Amazzonia Intere Biologiche Noci Brasiliane Biologiche Noci Brasile</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€16,85</p>
+        <a href="https://www.amazon.it/dp/B0919YK43R?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -416,9 +523,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Sour Starch - Polvilho Azedo - Yoki - 17.6 (oz 500g) - GLUTEN FREE</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
-        <p class="preco">€6,89</p>
-        <a href="https://www.amazon.it/dp/B005CBRPIW?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
+        <p class="preco">€6,99</p>
+        <a href="https://www.amazon.it/dp/B005CBRPIW?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -426,9 +533,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Yoki- Polvilho doce (Sour Manioc) 500g (PACK OF 2)</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
-        <p class="preco">€9,99</p>
-        <a href="https://www.amazon.it/dp/B00RM0PTS4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,5</span></p>
+        <p class="preco preco-nd">Vedi su Amazon</p>
+        <a href="https://www.amazon.it/dp/B00RM0PTS4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -436,19 +543,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>TAPIOCA YOKI BUSTA DA 500GR</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,2</span></p>
-        <p class="preco">€8,99</p>
-        <a href="https://www.amazon.it/dp/B019D0NF2C?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/616C8VPDzpL._AC_UL320_.jpg" alt="Velho Barreiro Cachaca, 700ml" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Velho Barreiro Cachaca, 700ml</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
-        <p class="preco">€23,90</p>
-        <a href="https://www.amazon.it/dp/B007W1JSQ2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,2</span></p>
+        <p class="preco">€8,20</p>
+        <a href="https://www.amazon.it/dp/B019D0NF2C?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -456,9 +553,19 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Velho Barreiro Cachaça 39,00% 1,00 Liter</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">5,0</span></p>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">5,0</span></p>
         <p class="preco">€29,85</p>
-        <a href="https://www.amazon.it/dp/B08MYM2Y1T?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B08MYM2Y1T?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/616C8VPDzpL._AC_UL320_.jpg" alt="Velho Barreiro Cachaca, 700ml" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">🌿 Alimentari</span>
+        <h3>Velho Barreiro Cachaca, 700ml</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,5</span></p>
+        <p class="preco">€23,90</p>
+        <a href="https://www.amazon.it/dp/B007W1JSQ2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -466,9 +573,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Sagatiba Cristalina - Cachaça Brasiliana Premium, 70 cl, Invecchiata 2 Anni, 38% Vol</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
         <p class="preco">€13,03</p>
-        <a href="https://www.amazon.it/dp/B07WWXF5SP?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B07WWXF5SP?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -476,59 +583,59 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>|Bonbon Sonho De Valsa - Lacta - 35.27oz || Bombom Sonho De Valsa Lacta - 1kg|</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
         <p class="preco">€39,99</p>
-        <a href="https://www.amazon.it/dp/B00E3UV86I?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B00E3UV86I?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61pzbLzIxKL._AC_UL320_.jpg" alt="Weibler Confiserie | Astuccio Set 4 Rossetti in Cioccolato al Latte | Creazioni in Cioccolato al Lat" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71IehuwieCL._AC_UL320_.jpg" alt="Perle di Sole ‘Amalfitude’ – Praline Cioccolato Fondente con Crema di Limone Costa d’Amalfi I.G.P., " loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Weibler Confiserie | Astuccio Set 4 Rossetti in Cioccolato al Latte | Creazioni in Cioccolato al Lat</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">3,8</span></p>
-        <p class="preco">€11,99</p>
-        <a href="https://www.amazon.it/dp/B0888NQJ6G?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>Perle di Sole ‘Amalfitude’ – Praline Cioccolato Fondente con Crema di Limone Costa d’Amalfi I.G.P., </h3>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">5,0</span></p>
+        <p class="preco">€12,79</p>
+        <a href="https://www.amazon.it/dp/B0GHYSKWDF?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61KMhAl9WtL._AC_UL320_.jpg" alt="Mars Barretta con Caramello Ricoperta al Cioccolato, 32 Barrette X51G (1632G), Idee Regalo Natale, N" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61Mz9egtANL._AC_UL320_.jpg" alt="Cioccolatini La Suiss a - Vasto Assortimento di Cioccolatini, 1kg" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Mars Barretta con Caramello Ricoperta al Cioccolato, 32 Barrette X51G (1632G), Idee Regalo Natale, N</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
-        <p class="preco">€24,90</p>
-        <a href="https://www.amazon.it/dp/B0CT3KLQW4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>Cioccolatini La Suiss a - Vasto Assortimento di Cioccolatini, 1kg</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,0</span></p>
+        <p class="preco">€31,90</p>
+        <a href="https://www.amazon.it/dp/B0DKD23DPR?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/816m5e1UoiL._AC_UL320_.jpg" alt="Biojoy Acai in Polvere BIO (100 g), Bacche di Acai Liofilizzate e Crude (Euterpe oleracea Mart.)" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71I6xhnx7OL._AC_UL320_.jpg" alt="Acai in Polvere Biologico - 150g. Bacche di Acai Liofilizzate Crude Estratte dalla Polpa. Contiene A" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Biojoy Acai in Polvere BIO (100 g), Bacche di Acai Liofilizzate e Crude (Euterpe oleracea Mart.)</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,5</span></p>
+        <h3>Acai in Polvere Biologico - 150g. Bacche di Acai Liofilizzate Crude Estratte dalla Polpa. Contiene A</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,2</span></p>
+        <p class="preco">€29,40</p>
+        <a href="https://www.amazon.it/dp/B00MW1V78E?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81hM3ObQ9AL._AC_UL320_.jpg" alt="NaturaleBio Bacche di Acai Biologiche in Polvere - Freeze-Dried - 50 gr. Prodotto in Brasile, Liofil" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">🌿 Alimentari</span>
+        <h3>NaturaleBio Bacche di Acai Biologiche in Polvere - Freeze-Dried - 50 gr. Prodotto in Brasile, Liofil</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€7,99</p>
+        <a href="https://www.amazon.it/dp/B079GTJ6G8?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/818hAUApyZL._AC_UL320_.jpg" alt="NaturaleBio Bacche di Acai Biologiche in Polvere - Freeze-Dried - 100 gr. Prodotto in Brasile, Liofi" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">🌿 Alimentari</span>
+        <h3>NaturaleBio Bacche di Acai Biologiche in Polvere - Freeze-Dried - 100 gr. Prodotto in Brasile, Liofi</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,3</span></p>
         <p class="preco">€14,99</p>
-        <a href="https://www.amazon.it/dp/B08XVPF7P2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81X3T4n0jLL._AC_UL320_.jpg" alt="KoRo - Açai bio in polvere | 500 g" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>KoRo - Açai bio in polvere | 500 g</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">3,8</span></p>
-        <p class="preco">€55,00</p>
-        <a href="https://www.amazon.it/dp/B08KGBFFZX?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61mySElp43L._AC_UL320_.jpg" alt="BactPro - BactSeptic - Pulizia e manutenzione delle fosse biologiche, scioglie gli ingorghi ed elimi" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>BactPro - BactSeptic - Pulizia e manutenzione delle fosse biologiche, scioglie gli ingorghi ed elimi</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
-        <p class="preco">€25,99</p>
-        <a href="https://www.amazon.it/dp/B09B3LNBYK?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B079GXCGJC?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -536,9 +643,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da </h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,3</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,3</span></p>
         <p class="preco">€21,99</p>
-        <a href="https://www.amazon.it/dp/B01MTQVUQQ?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B01MTQVUQQ?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -546,19 +653,19 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Guaranà BIO Extra Forte, 5400mg al giorno | 10% Caffeina Naturale | 90 capsule | Equilibrio del peso</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,3</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,3</span></p>
         <p class="preco">€18,99</p>
-        <a href="https://www.amazon.it/dp/B0CPMB415S?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0CPMB415S?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71rutCYcWiL._AC_UL320_.jpg" alt="Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da " loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/61LZLckDj9L._AC_UL320_.jpg" alt="ERBEX – Integratore Alimentare a base di Guaranà, Estratto Vegetale in Capsule" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Guarana Puro Vegano, 180 Capsule, per 3 Mesi, Estratto 10:1 di Guarana Polvere, 4800mg per Dose, da </h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,3</span></p>
-        <p class="preco">€21,99</p>
-        <a href="https://www.amazon.it/dp/B01MTQVUQQ?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>ERBEX – Integratore Alimentare a base di Guaranà, Estratto Vegetale in Capsule</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,5</span></p>
+        <p class="preco">€16,90</p>
+        <a href="https://www.amazon.it/dp/B0CTKLBBH5?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -566,9 +673,9 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Incapto Caffè in Grani di Specialità 1kg | Origine Brasile | 100% Arabica | Specialty Coffee 84 punt</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
-        <p class="preco">€30,35</p>
-        <a href="https://www.amazon.it/dp/B08J3DZ3FF?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
+        <p class="preco">€31,95</p>
+        <a href="https://www.amazon.it/dp/B08J3DZ3FF?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
@@ -576,19 +683,29 @@
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
         <h3>Bocono Specialty Coffee. Specialty Coffee Origine Brasile. Caffe in Grani 1 KG. Caffè Specialty Tost</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">3,9</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">3,9</span></p>
         <p class="preco">€33,00</p>
-        <a href="https://www.amazon.it/dp/B0871NKFCD?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0871NKFCD?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Alimentari" style="--cat-color:#198754">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71K-A-UDn4L._AC_UL320_.jpg" alt="Caffè Milani - 1937 Blend Como Lake Edition | Caffè Arabica 100% | Aroma Intenso e Note Dolci | Misc" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71XGZpWKkjL._AC_UL320_.jpg" alt="Bocono Specialty Coffee. Specialty Coffee Origine Brasile 250g. Caffè di Specialità in Grani. Arabic" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">🌿 Alimentari</span>
-        <h3>Caffè Milani - 1937 Blend Como Lake Edition | Caffè Arabica 100% | Aroma Intenso e Note Dolci | Misc</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">5,0</span></p>
-        <p class="preco">€16,90</p>
-        <a href="https://www.amazon.it/dp/B0FTT11B1H?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <h3>Bocono Specialty Coffee. Specialty Coffee Origine Brasile 250g. Caffè di Specialità in Grani. Arabic</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,1</span></p>
+        <p class="preco">€15,00</p>
+        <a href="https://www.amazon.it/dp/B086Z5L3X5?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81S2Vx3qfyL._AC_UL320_.jpg" alt="Havaianas" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">👟 Moda</span>
+        <h3>Havaianas</h3>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
+        <p class="preco">€26,48</p>
+        <a href="https://www.amazon.it/dp/B015SGE85S?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
@@ -596,9 +713,9 @@
     <div class="produto-info">
         <span class="categoria-tag">👟 Moda</span>
         <h3>Havaianas</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,7</span></p>
-        <p class="preco">€12,23</p>
-        <a href="https://www.amazon.it/dp/B0DBM6NMF4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,7</span></p>
+        <p class="preco">€20,00</p>
+        <a href="https://www.amazon.it/dp/B0DBM6NMF4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
@@ -606,19 +723,9 @@
     <div class="produto-info">
         <span class="categoria-tag">👟 Moda</span>
         <h3>Havaianas</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
-        <p class="preco">€18,00</p>
-        <a href="https://www.amazon.it/dp/B09XJHW5J4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/811VGQPzlBL._AC_UL320_.jpg" alt="Havaianas" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">👟 Moda</span>
-        <h3>Havaianas</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-val">4,6</span></p>
-        <p class="preco">€21,99</p>
-        <a href="https://www.amazon.it/dp/B09XJGSZP2?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★★</span> <span class="rating-val">4,6</span></p>
+        <p class="preco">€29,90</p>
+        <a href="https://www.amazon.it/dp/B09XJHW5J4?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
@@ -626,29 +733,29 @@
     <div class="produto-info">
         <span class="categoria-tag">👟 Moda</span>
         <h3>Hialegion</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,4</span></p>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,4</span></p>
         <p class="preco">€14,99</p>
-        <a href="https://www.amazon.it/dp/B0F83HCSBV?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <a href="https://www.amazon.it/dp/B0F83HCSBV?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 <div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71dKHTcsQJL._AC_UL320_.jpg" alt="VOENXE" loading="lazy"></div>
-    <div class="produto-info">
-        <span class="categoria-tag">👟 Moda</span>
-        <h3>VOENXE</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,2</span></p>
-        <p class="preco">€14,99</p>
-        <a href="https://www.amazon.it/dp/B0CXDXTTZX?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
-    </div>
-</div>
-<div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
-    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81-gjhMbUKL._AC_UL320_.jpg" alt="ALL OF SHE" loading="lazy"></div>
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/81vkxk8Q9cL._AC_UL320_.jpg" alt="ALL OF SHE" loading="lazy"></div>
     <div class="produto-info">
         <span class="categoria-tag">👟 Moda</span>
         <h3>ALL OF SHE</h3>
-        <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-val">4,2</span></p>
-        <p class="preco">€18,04</p>
-        <a href="https://www.amazon.it/dp/B0FPQWWC5Z?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it &#8594;</a>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,2</span></p>
+        <p class="preco">€16,99</p>
+        <a href="https://www.amazon.it/dp/B0F48B3ZXH?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
+    </div>
+</div>
+<div class="produto-card" data-grupo="Moda" style="--cat-color:#0d6efd">
+    <div class="produto-img"><img src="https://m.media-amazon.com/images/I/71dwVx-0Y9L._AC_UL320_.jpg" alt="comeondear" loading="lazy"></div>
+    <div class="produto-info">
+        <span class="categoria-tag">👟 Moda</span>
+        <h3>comeondear</h3>
+        <p class="rating"><span class="stars">★★★★☆</span> <span class="rating-val">4,0</span></p>
+        <p class="preco">€10,99</p>
+        <a href="https://www.amazon.it/dp/B0BJDNMGPQ?tag=agents-21" target="_blank" class="btn-compra">Acquista su Amazon.it →</a>
     </div>
 </div>
 
@@ -656,16 +763,21 @@
     </div>
 </div>
 
-<div class="ad-top"></div>
+
 
 <footer>
-    <p><strong style="color:white">Prodotti Brasiliani</strong> &mdash; Link di affiliazione Amazon Associates &mdash; acquistando tramite questi link supporti il progetto senza costi aggiuntivi.</p>
+    <p>
+        <strong style="color:white">Prodotti Brasiliani</strong> &mdash;
+        Link di affiliazione Amazon Associates &mdash; acquistando tramite questi link supporti il progetto senza costi aggiuntivi.
+    </p>
     <div class="footer-channels">
-        <a href="https://www.youtube.com/@naturaocculto" target="_blank">&#9654; YouTube PT</a>
-        <a href="https://www.youtube.com/@DarkMysteriesEN" target="_blank">&#9654; YouTube EN</a>
-        <a href="https://www.youtube.com/@MisteriOscuriIT" target="_blank">&#9654; YouTube IT</a>
+        <a href="https://www.youtube.com/@naturaocculto" target="_blank">▶ YouTube PT</a>
+        <a href="https://www.youtube.com/@DarkMysteriesEN" target="_blank">▶ YouTube EN</a>
+        <a href="https://www.youtube.com/@MisteriOscuriIT" target="_blank">▶ YouTube IT</a>
     </div>
-    <p style="margin-top:12px; font-size:0.8em; opacity:0.6;">&copy; 2026 &mdash; <a href="https://www.amazon.it" target="_blank">Amazon.it</a></p>
+    <p style="margin-top:12px; font-size:0.8em; opacity:0.6;">
+        &copy; 2026 &mdash; <a href="https://www.amazon.it" target="_blank">Amazon.it</a>
+    </p>
 </footer>
 
 <script>
@@ -674,8 +786,11 @@
         var visibili = 0;
         cards.forEach(function(card) {
             if (grupo === 'tutti' || card.dataset.grupo === grupo) {
-                card.classList.remove('oculto'); visibili++;
-            } else { card.classList.add('oculto'); }
+                card.classList.remove('oculto');
+                visibili++;
+            } else {
+                card.classList.add('oculto');
+            }
         });
         document.querySelectorAll('.filtro-btn').forEach(function(btn) {
             btn.classList.toggle('ativo', btn.dataset.grupo === grupo);
